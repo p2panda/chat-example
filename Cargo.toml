@@ -1,0 +1,13 @@
+[package]
+name = "chat-example"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+futures-util = "0.3.34"
+p2panda = "0.7.1"
+p2panda-core = { version = "0.7.1", features = ["test_utils"] }
+rand = "0.10.2"
+serde = { version = "1.0.229", features = ["derive"] }
+tokio = { version = "1.52.3", default-features = false, features = ["signal"] }
+tracing = "0.1.44"
